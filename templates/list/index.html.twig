@@ -1,0 +1,21 @@
+{# templates/list/index.html.twig #} {% extends 'base.html.twig' %} {% block
+    body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card bg-light mb-3 mt-3">
+                    <div class="card-body">
+                        {% if app.user != null %}
+                            <div class="card-header">Secret unlocked: You are logged in!!!</div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% if app.user == null %}
+                    <a href="{{ path('app_login') }}" class="btn btn-info">
+                        Click here to login</a
+                    >
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
