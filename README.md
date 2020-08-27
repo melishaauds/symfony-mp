@@ -1,2 +1,2 @@
 # symfony-mp
-Machine Problems in Symfony
+Machine Problem in Symfony
